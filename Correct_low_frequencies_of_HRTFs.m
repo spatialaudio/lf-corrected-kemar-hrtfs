@@ -160,22 +160,30 @@ new.Data.IR = new_irs;
 %round source positions
 new.SourcePosition = round(new.SourcePosition);
 
-%extend author contact
-new.GLOBAL_AuthorContact = [new.GLOBAL_AuthorContact ...
-    ', vera.erbes@uni-rostock.de'];
+%update author contact
+new.GLOBAL_AuthorContact = ['hagen.wierstorf@posteo.de, '...
+    'vera.erbes@uni-rostock.de'];
 
 %update history information
-new.GLOBAL_History = [new.GLOBAL_History ...
+new.GLOBAL_History = ['Converted from TU-Berlin database '...
+    'Upgraded from SOFA 0.6 '...
     'Low frequency correction and truncation to ' num2str(new_length) ' samples'];
 
-% %license
-% new.GLOBAL_License = '';
+%new license
+new.GLOBAL_License = 'Creative Commons Attribution 4.0';
+
+%replace name of organisation
+new.GLOBAL_Organization = ['University of Rostock, '...
+    'Institute of Communications Engineering'];
 
 %replace URL
 new.GLOBAL_Origin = '';
 
 %update title
 new.GLOBAL_Title = 'HRTF low frequency corrected';
+
+%replace name of database
+new.GLOBAL_DatabaseName = 'TU Berlin low frequency corrected';
 
 %% Save new SOFA file
 SOFAsave('KEMAR_HRTFs_lfcorr.sofa',new,1)
