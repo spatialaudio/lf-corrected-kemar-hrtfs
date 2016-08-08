@@ -177,7 +177,8 @@ new.GLOBAL_Organization = ['University of Rostock, '...
     'Institute of Communications Engineering'];
 
 %replace URL
-new.GLOBAL_Origin = '';
+new.GLOBAL_Origin = ['https://github.com/spatialaudio/' ...
+    'lf-corrected-kemar-hrtfs/blob/master/KEMAR_HRTFs_lfcorr.sofa'];
 
 %update title
 new.GLOBAL_Title = 'HRTF low frequency corrected';
