@@ -12,4 +12,6 @@ Alternative methods for low frequency correction of HTRFs can be found in
 * Bernschütz, B. (2013): A Spherical Far Field HRIR/HRTF Compilation of the Neumann KU 100. Proc. of the 39th German Annual Conf. on Acoust. (DAGA)
 
 ## Licenses
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The data by Hagen Wierstorf, Matthias Geier, Sascha Spors and Vera Erbes in this repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 The Matlab code by Vera Erbes is licensed under the MIT license. Confer header of [Correct_low_frequencies_of_HRTFs.m](http://github.com/spatialaudio/hptf-compensation-filters/blob/master/Correct_low_frequencies_of_HRTFs.m) for more information on this license.
