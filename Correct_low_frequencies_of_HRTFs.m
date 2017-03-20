@@ -45,14 +45,14 @@ SOFAstart
 
 %% Load original data
 filename = 'QU_KEMAR_anechoic_3m.sofa';
-% Download data if necessary
+%download data if necessary
 if ~exist(filename,'file')
     url = ['https://github.com/sfstoolbox/data/blob/master/HRTFs/', ...
            'QU_KEMAR_anechoic_3m.sofa?raw=true'];
     warning('Downloading file %s',url);
     websave(filename,url);
 end
-% load HRTFs
+%load HRTFs
 original = SOFAload(filename);
 
 %% Prerequisites
